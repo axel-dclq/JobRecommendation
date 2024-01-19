@@ -36,7 +36,7 @@ class App(customtkinter.CTk):
         screen_height = self.winfo_screenheight() - 70
         self.geometry(f"{screen_width}x{screen_height}+0+0")
         self.minsize(App.WIDTH, App.HEIGHT)
-        # self.iconbitmap("img/icon.ico")
+        self.iconbitmap("img/icon.ico")
 
         # Configure behavior on window close
         self.protocol("WM_DELETE_WINDOW", self.on_closing)
